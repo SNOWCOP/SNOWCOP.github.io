@@ -1,0 +1,1 @@
+![Logo](/images/logo_snowcop_extratropical.png)
