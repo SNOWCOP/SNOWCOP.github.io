@@ -26,7 +26,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
           cache: npm
 
       - name: Install Deps
@@ -37,7 +37,7 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           npm run docs:build
-          > docs/.vuepress/dist/.nojekyll
+          touch docs/.vuepress/dist/.nojekyll
 
       - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@v4
