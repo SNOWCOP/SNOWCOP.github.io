@@ -1,16 +1,3 @@
 import comp from "/home/kscheidt/Documents/Website-SNOWCOP/SNOWCOP/docs/.vuepress/.temp/pages/guide/assets.html.vue"
-const data = JSON.parse("{\"path\":\"/guide/assets.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[],\"git\":{},\"filePathRelative\":\"guide/assets.md\"}")
+const data = JSON.parse("{\"path\":\"/guide/assets.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1732811775000,\"contributors\":[{\"name\":\"kscheidt\",\"email\":\"kathi_scheidt@yahoo.de\",\"commits\":1}]},\"filePathRelative\":\"guide/assets.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
