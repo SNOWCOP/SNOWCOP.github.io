@@ -9,9 +9,9 @@ export default defineUserConfig({
   description: 'Unlocking the full potential of Copernicus data and infrastructure to improve meltwater monitoring in the Andes',
 
   theme: defaultTheme({
-    //logo: 'https://vuejs.press/images/hero.png',
-    logo: '/images/logo_snowcop_extratropical.png',
-    navbar: ['/', '/about', '/Team'],
+    logo: 'https://vuejs.press/images/hero.png',
+
+    navbar: ['/', '/get-started'],
   }),
 
   bundler: viteBundler(),
