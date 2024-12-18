@@ -11,7 +11,7 @@ export default defineUserConfig({
   theme: defaultTheme({
     //logo: 'https://vuejs.press/images/hero.png',
     logo: '/images/logo_snowcop_extratropical.png',
-    navbar: ['/', '/get-started', '/our-project'],
+    navbar: ['/', '/about', '/Team'],
   }),
 
   bundler: viteBundler(),

@@ -3,31 +3,25 @@ home: true
 title: Home
 heroImage: /images/logo_snowcop_extratropical.png
 actions:
-  - text: Get Started
-    link: /getting-started.html
+  - text: The lastest Research
+    link: /get-started.html
     type: primary
 
-  - text: Introduction
-    link: https://vuejs.press/guide/introduction.html
+  - text: About SNOWCOP
+    link: /about.html
     type: secondary
 
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+  - title: Objective 1
+    details: Develop of high-resolution SWE and ice melt reanalysis dataset for extra-tropical Andes.
+  - title: Objective 2
+    details: Capitalize on CDSE to foster innovation and excellence in development of solutions.
+  - title: Objective 3
+    details: Enhance the Capacity building and rise awareness.
 
-footer: MIT Licensed | Copyright © 2018-present VuePress Community
+footer: This project has received funding from the European Union’s Horizon Research and Innovation Actions programme under Grant Agreement 10180133
 ---
 
-This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
+[Follow us][linkedin]
 
-[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
+[linkedin]: https://www.linkedin.com/company/snowcop-he
