@@ -16,5 +16,5 @@ export default defineUserConfig({
 
   bundler: viteBundler(),
 
-  base: 'snowcop.eu/',
+  base: '/',
 })
