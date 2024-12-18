@@ -1,1 +1,0 @@
-export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"en-US\",\"title\":\"SNOWCOP\",\"description\":\"Unlocking the full potential of Copernicus data and infrastructure to improve meltwater monitoring in the Andes\",\"head\":[],\"locales\":{}}")
