@@ -38,8 +38,8 @@ module.exports = {
         link: '/guide/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Team',
+        link: '/team/',
       },
       {
         text: 'VuePress',
