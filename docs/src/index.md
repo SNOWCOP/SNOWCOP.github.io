@@ -2,8 +2,8 @@
 home: true
 title: Home
 heroImage: /images/logo_snowcop_extratropical.png
-actionText: The latest Research
-actionLink: /get-started/
+actionText: The Latest Research
+actionLink: /latest-research/
 
 # TODO: Before, we also had this - but we can only have one action now in version 1.x anymore
 #  - text: About SNOWCOP
