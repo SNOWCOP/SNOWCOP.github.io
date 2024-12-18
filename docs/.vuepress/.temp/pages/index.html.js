@@ -1,3 +1,16 @@
-import comp from "/home/kscheidt/Documents/Website-SNOWCOP/SNOWCOP/docs/.vuepress/.temp/pages/index.html.vue"
-const data = JSON.parse("{\"path\":\"/\",\"title\":\"Home\",\"lang\":\"en-US\",\"frontmatter\":{\"home\":true,\"title\":\"Home\",\"heroImage\":\"/images/logo_snowcop_extratropical.png\",\"actions\":[{\"text\":\"Get Started\",\"link\":\"/getting-started.html\",\"type\":\"primary\"},{\"text\":\"Introduction\",\"link\":\"https://vuejs.press/guide/introduction.html\",\"type\":\"secondary\"}],\"features\":[{\"title\":\"Simplicity First\",\"details\":\"Minimal setup with markdown-centered project structure helps you focus on writing.\"},{\"title\":\"Vue-Powered\",\"details\":\"Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.\"},{\"title\":\"Performant\",\"details\":\"VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.\"},{\"title\":\"Themes\",\"details\":\"Providing a default theme out of the box. You can also choose a community theme or create your own one.\"},{\"title\":\"Plugins\",\"details\":\"Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.\"},{\"title\":\"Bundlers\",\"details\":\"Default bundler is Vite, while Webpack is also supported. Choose the one you like!\"}],\"footer\":\"MIT Licensed | Copyright © 2018-present VuePress Community\"},\"headers\":[],\"git\":{\"updatedTime\":1732811775000,\"contributors\":[{\"name\":\"kscheidt\",\"email\":\"kathi_scheidt@yahoo.de\",\"commits\":1}]},\"filePathRelative\":\"README.md\"}")
+import comp from "/home/cmarin@eurac.edu/SNOWCOP.github.io/docs/.vuepress/.temp/pages/index.html.vue"
+const data = JSON.parse("{\"path\":\"/\",\"title\":\"Home\",\"lang\":\"en-US\",\"frontmatter\":{\"home\":true,\"title\":\"Home\",\"heroImage\":\"/images/logo_snowcop_extratropical.png\",\"actions\":[{\"text\":\"The lastest Research\",\"link\":\"/get-started.html\",\"type\":\"primary\"},{\"text\":\"About SNOWCOP\",\"link\":\"/about.html\",\"type\":\"secondary\"}],\"features\":[{\"title\":\"Objective 1\",\"details\":\"Develop of high-resolution SWE and ice melt reanalysis dataset for extra-tropical Andes.\"},{\"title\":\"Objective 2\",\"details\":\"Capitalize on CDSE to foster innovation and excellence in development of solutions.\"},{\"title\":\"Objective 3\",\"details\":\"Enhance the Capacity building and rise awareness.\"}],\"footer\":\"This project has received funding from the European Union’s Horizon Research and Innovation Actions programme under Grant Agreement 10180133\"},\"headers\":[],\"git\":{\"updatedTime\":1732811775000,\"contributors\":[{\"name\":\"kscheidt\",\"username\":\"kscheidt\",\"email\":\"kathi_scheidt@yahoo.de\",\"commits\":1,\"url\":\"https://github.com/kscheidt\"}]},\"filePathRelative\":\"README.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
