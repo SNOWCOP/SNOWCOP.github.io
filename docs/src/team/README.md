@@ -8,7 +8,7 @@ We are driven by curiosity.
 
 ## [Eurac Research][EURAC]
 
-## [Unniversity of Chile][UCHILE]
+## [University of Chile][UCHILE]
 
 ## [VITO remote sensing][VITO]
 

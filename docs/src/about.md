@@ -44,8 +44,8 @@ dynamics within a specific catchment** based on the project generated reanalysis
 
 Focusing on the critical Andes Mountain range, where meltwater serves as a vital lifeline for millions of people but
 remains poorly monitored, this initiative **leverages the expertise of the International Copernicus partners at the
-University of Chile**. Through this collaboration, we tackle shared challenges faced by mountain regions globally, *
-*developing replicable solutions that unlock new opportunities for both local and European communities**.
+University of Chile**. Through this collaboration, we tackle shared challenges faced by mountain regions globally, 
+**developing replicable solutions that unlock new opportunities for both local and European communities**.
 
 
 [CDSE]: https://dataspace.copernicus.eu/

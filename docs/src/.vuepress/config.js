@@ -35,6 +35,10 @@ module.exports = {
       //   text: 'Guide',
       //   link: '/guide/',
       // },
+      {
+        text: 'The Latest Research',
+        link: '/latest-research/',
+      },
       { text: 'About', link: '/about/' },
       {
         text: 'Team',

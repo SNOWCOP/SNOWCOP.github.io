@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # The Latest Research from SNOWCOP
 
 Is it impossible? Let's see! Here the latest news from SNOWCOP.
