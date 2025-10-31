@@ -6,6 +6,50 @@ sidebar: auto
 
 Is it impossible? Let's see! Here the latest news from SNOWCOP.
 
+## Assessing Cloud-Free High-Resolution Satellite Data Availability Across the Extra-Tropical Andes
+
+In this exploratory analysis, we assessed the availability of **high-resolution, cloud-free satellite imagery** across the Andes on a pixel-wise basis over a complete hydrological year. The key metric used was the **percentage of available and usable (i.e., cloud-free) observations**.
+
+**Datasets**
+
+The analysis included data from the following missions:
+
+* **Sentinel-2A** (launched in 2015) and **Sentinel-2B** (launched in 2017)
+
+* **Landsat-5** (1984–2013), **Landsat-7** (1999–2024), **Landsat-8** (from 2013), and **Landsat-9** (from 2021)
+
+**Cloud Detection Method**
+
+Cloud-free observations were identified using the **Fmask algorithm**. However, Fmask is known to be overly conservative in snow-covered regions, often misclassifying snow as cloud (e.g., see [Wright et al., 2024][W2024]). This leads to an underestimation of usable observations, particularly in high-elevation areas where snow persists for much of the year.
+
+**Results and Observations**
+
+![DataAva](/images/DataAva.png)
+
+The visualization employs a **color scale from 0 to 50%**, corresponding to a maximum of approximately one usable image every two days over the year.
+
+The analysis highlights **2013 as the worst year on record** for the number of high-resolution optical acquisitions across the entire domain—reflecting the transition between Landsat-7 degradation and the early stages of Landsat-8 operations.
+
+In contrast, since **2021, the combined use of Landsat-8, Landsat-9, and Sentinel-2 missions has resulted in a major improvement in data availability**. This synergy now provides, on average, one high-resolution, cloud-free image every three days across large parts of the Andes.
+
+A particularly **well-covered central Andean band** stands out, characterized by more frequent cloud-free acquisitions. Within this region, basins such as Río Maipo, Río Cachapoal, Río Tinguiririca, Río Teno, Río Maule, upper Río Mendoza, Río Ñuble, and Río Colorado exhibit the highest coverage.
+
+**Integrating Multi-Resolution Data**
+
+Despite this progress, the **temporal density of high-resolution (HR) optical data remains insufficient to adequately sample snow dynamics across the Andes**, especially over the past two decades.
+In **Nyquist–Shannon terms**, the available HR data do not meet the sampling frequency required to fully capture snow cover variability.
+
+To address this limitation, the SNOWCOP project employs a **novel approach that integrates high- and low-resolution (LR) snow cover datasets** [(Premier et al., 2021)][P2021]. This method leverages spatiotemporal correlations driven by topographic and meteorological factors to enhance temporal continuity and spatial completeness.
+
+The approach identifies **recurring interannual snow cover patterns** linked to local environmental conditions through multi-temporal analyses of long historical HR time series—where longer archives strengthen pattern detection and model robustness. These identified patterns can then be exploited during periods of sparse HR observations, such as 2013.
+
+Of course, the accuracy of the low-resolution snow cover fraction remains a critical factor for ensuring reliable results.
+
+Stay tuned for further insights into this integrative framework and its applications for **snow monitoring in the Andes within SNOWCOP**.
+
+[W2024]: https://www.sciencedirect.com/science/article/pii/S0034425724001330
+[P2021]: https://ieeexplore.ieee.org/document/9511108
+
 ## Can Glacier Runoff Be Modeled Using a Few Stations and Satellite Multispectral Data? 
 
 One of the key objectives of the SNOWCOP project is to accurately quantify glacier melt rates and distinguish between snow and ice contributions. To explore this, we focused on a glacier on **Volcán Azufre** (see Figure below), an ideal study site due to: 
