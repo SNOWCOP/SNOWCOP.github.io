@@ -4,18 +4,73 @@
  * ref：https://v1.vuepress.vuejs.org/config/#index-styl
  */
 
-.home .hero img
-  max-width 400px!important
+// Shared branding and fluid content for every page.
+.theme-container .theme-default-content, .theme-container .home
+  overflow-wrap anywhere
 
-// Scoped to the Open Call page; other pages retain their existing appearance.
+  h1, h2, h3, h4, h5, h6
+    color $accentColor
+
+  img, video
+    max-width 100%
+    height auto
+
+  iframe
+    max-width 100%
+
+.theme-default-content:not(.custom) h1
+  font-size clamp(1.8rem, 1.2rem + 2vw, 2.2rem)
+
+.theme-default-content table
+  max-width 100%
+
+.sidebar .sidebar-links a
+  overflow-wrap anywhere
+
+a:focus-visible, button:focus-visible, input:focus-visible
+  outline 3px solid $accentColor
+  outline-offset 3px
+
+.theme-container .home
+  .hero
+    img
+      width 400px
+      max-width 100%
+      height auto
+      object-fit contain
+
+    h1
+      font-size clamp(2rem, 1.2rem + 3vw, 3rem)
+
+    .description
+      font-size clamp(1.2rem, 1rem + 1vw, 1.6rem)
+
+    .action-button
+      max-width 100%
+      white-space normal
+
+  .features
+    display grid
+    grid-template-columns unquote('repeat(auto-fit, minmax(min(100%, 15rem), 1fr))')
+    gap 1.5rem
+
+  .feature
+    min-width 0
+    max-width none
+    padding 0
+
+    h2
+      color $accentColor
+
+  .footer
+    padding 2rem 0
+
+// Open Call components share the site's accent color.
 .snowcop-open-call
-  h1
-    color #df1b12
-
   .call-status
     margin 1.5rem 0
     padding 1rem 1.25rem
-    border-left 4px solid #df1b12
+    border-left 4px solid $accentColor
     border-radius 0 6px 6px 0
     background #fff4f1
 
@@ -25,7 +80,7 @@
   .call-contact
     display inline-block
     padding 0.7rem 1rem
-    border 2px solid #df1b12
+    border 2px solid $accentColor
     border-radius 5px
     color #b4160e
     font-weight 600
@@ -45,3 +100,19 @@
     .call-contact
       display block
       text-align center
+
+@media (max-width: $MQMobileNarrow)
+  .theme-default-content:not(.custom)
+    padding-left 1.25rem
+    padding-right 1.25rem
+
+  .theme-container .home
+    padding-left 1.25rem
+    padding-right 1.25rem
+
+  .theme-default-content th, .theme-default-content td
+    padding .5rem .65rem
+
+@media (prefers-reduced-motion: reduce)
+  .sidebar, .theme-container .home .hero .action-button
+    transition none
