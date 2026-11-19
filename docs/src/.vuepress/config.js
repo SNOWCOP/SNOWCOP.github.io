@@ -40,6 +40,7 @@ module.exports = {
         link: '/latest-research/',
       },
       { text: 'About', link: '/about/' },
+      { text: 'Open Call', link: '/open-call/' },
       {
         text: 'Team',
         link: '/team/',
