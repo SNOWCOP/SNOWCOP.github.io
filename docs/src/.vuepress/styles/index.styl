@@ -116,3 +116,12 @@ a:focus-visible, button:focus-visible, input:focus-visible
 @media (prefers-reduced-motion: reduce)
   .sidebar, .theme-container .home .hero .action-button
     transition none
+
+// Global UI is outside the page layout; keep footer links clear of the sidebar.
+@media (min-width: $MQMobile + 1px)
+  .theme-container:not(.no-sidebar) + .global-ui .snowcop-privacy-footer
+    padding-left $sidebarWidth + 1rem
+
+@media (min-width: $MQMobile + 1px) and (max-width: $MQNarrow)
+  .theme-container:not(.no-sidebar) + .global-ui .snowcop-privacy-footer
+    padding-left $sidebarWidth * 0.82 + 1rem

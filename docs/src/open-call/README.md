@@ -87,6 +87,8 @@ A detailed itemised budget is not required. The official application form and re
 
 ## How to submit when the call opens
 
+Before submitting, please read the [Privacy information for applicants](/open-call/privacy/), which explains how personal data are handled for this call. For information about browsing this website, see [Privacy and cookies](/privacy/).
+
 1. Read the guidelines and use the official application form.
 2. Prepare the application in **English** and save the completed documents as PDF attachments.
 3. Email the complete application to **earth.observation@eurac.edu** with the subject below.
