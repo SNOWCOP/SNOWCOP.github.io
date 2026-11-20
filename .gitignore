@@ -9,3 +9,6 @@ docs/src/.vuepress/dist
 
 node_modules
 .idea
+
+# Unpublished drafts for internal review only
+/internal-review/

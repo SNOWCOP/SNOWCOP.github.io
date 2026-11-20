@@ -1,5 +1,5 @@
 <template>
-  <footer class="snowcop-privacy-footer" aria-label="Copyright and privacy information">
+  <footer class="snowcop-privacy-footer" aria-label="Copyright and attribution">
     <p v-if="pageAuthors.length" class="snowcop-copyright__authors">
       Page authors:
       <span v-for="(author, index) in pageAuthors" :key="index">
@@ -19,11 +19,6 @@
       <a :href="$withBase('/copyright/')">Copyright, licensing and credits</a>
     </p>
 
-    <nav aria-label="Privacy notices">
-      <a :href="$withBase('/privacy/')">Privacy and cookies</a>
-      <span class="separator" aria-hidden="true">|</span>
-      <a :href="$withBase('/open-call/privacy/')">Privacy information for applicants</a>
-    </nav>
   </footer>
 </template>
 
@@ -70,13 +65,6 @@ export default {
 }
 .snowcop-privacy-footer p { margin: 0.25rem 0; }
 .snowcop-copyright__authors { color: #233446; }
-.snowcop-privacy-footer nav {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.4rem 0.75rem;
-}
 .snowcop-privacy-footer a {
   color: #b4160e;
   text-decoration: underline;
@@ -86,14 +74,5 @@ export default {
 .snowcop-privacy-footer a:focus-visible {
   outline: 3px solid #233446;
   outline-offset: 4px;
-}
-@media (max-width: 420px) {
-  .snowcop-privacy-footer nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  .separator {
-    display: none;
-  }
 }
 </style>
