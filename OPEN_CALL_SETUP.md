@@ -1,25 +1,30 @@
-# Open Call page: publication checklist
+# SNOWCOP Open Call page: current setup
 
-The proposed `/open-call/` page uses **earth.observation@eurac.edu** for enquiries and, once the call is open, application submissions. It introduces no form, upload endpoint or external submission provider. Applications remain in the institutional mailbox, outside this public repository.
+The page is `/open-call/`, implemented in `docs/src/open-call/README.md`. It receives no submissions itself: applications are sent to earth.observation@eurac.edu. The downloadable call PDF is `docs/src/.vuepress/public/open-call/SNOWCOP_Open_Call.pdf`, served at `/open-call/SNOWCOP_Open_Call.pdf`.
 
-The page is deliberately marked **in preparation / not open**. Its only email button opens an enquiry draft. No email has been sent and no mailbox settings have been changed by this website update.
+## Current content
 
-## Before launching the call
+- EUR 39,000 total, up to four pilots, EUR 9,750 per pilot.
+- Cut-offs: 21 December 2026, 18 January 2027 and 15 February 2027; each at 17:00 Brussels time.
+- Earlier cut-off rounds have priority. Within each round selection follows quality ranking. No budget or places are reserved for later rounds; the call closes when all places or budget are allocated.
+- Later cut-offs allow revised applications after feedback. Revisions do not retain the original priority. No automatic carry-over.
+- Five application sections within five A4 pages; four scored criteria, each with a 3/5 threshold and 15/20 overall.
+- Current PDF: exact, unmodified copy of the user-supplied SNOWCOP_cascade_funding_call-2.pdf. Do not regenerate it or substitute the earlier PDF. The PDF itself retains a draft status and an opening-date placeholder.
+- Resolve the duration discrepancy before publication: summary page 2 says 8 months; section 6/page 5 and timetable/page 10 say 10 months. The website therefore states only the 31 August 2027 completion deadline until confirmed.
 
-- Reconcile the web instructions with the approved call text and SNOWCOP's grant agreement. The earlier draft is not a final source for dates, amounts, country eligibility, application language or attachment requirements.
-- Confirm the opening date, deadline and explicit time zone, funding terms, eligibility, evaluation criteria, required documents and file-size limits.
-- Confirm that the mailbox is monitored, accepts external senders and the expected attachments, and is available to authorised application administrators. Test it using an external address.
-- Agree how receipt confirmations, application IDs and a submission register will be maintained. A website `mailto:` link provides none of these functions. Configure an acknowledgement through the institution if available; distinguish receipt from acceptance or eligibility.
-- Define receipt-time rules, treatment of revised applications, the authoritative final version, late applications and any submission failure procedure in the approved guidelines. Preserve received messages and original attachments.
-- Publish the institution-approved applicant privacy notice, including the responsible institution, purpose, access, applicable legal basis and retention arrangements. Do not replace this with a generic consent checkbox.
-- Upload only the approved **blank templates and public call documents** under `docs/src/.vuepress/public/open-call/`, then replace the forthcoming-document list with real download links. Never commit submitted proposals, personal data or signatures to this repository.
-- Update the status banner and summary table when the approved call opens; remove the repeated not-open notices and the `robots: noindex, nofollow` metadata then. If a submission button is added, label it **Prepare application email**, with the attachment/manual-send explanation retained.
-- Check the subject line in both the page and guidelines. The proposed format is `SNOWCOP Open Call - Application - [Organisation name]`.
+## Before opening
 
-## Review and publication
+1. Confirm and publish the actual opening date. The page deliberately does not invent one and remains marked in preparation, with noindex/nofollow metadata.
+2. Supply the approved application form and required declarations. No detailed itemised budget is requested. Add real download links once these exist; there are no fake template links.
+3. Resolve the PDF duration discrepancy and confirm the opening date/status. If the user supplies a corrected PDF, replace the download at the same path with those exact bytes. Do not regenerate the attached PDF.
+4. Reconcile the website, PDF, application form and Funding & Tenders Portal entry, including cut-off dates, first-round priority, resubmission rules and early closure. Check grant-specific publication/opening-period requirements against the actual dates.
+5. Confirm mailbox monitoring, external attachment delivery, a submission register, receipt acknowledgements, version handling, restricted evaluator access and the institution-approved applicant privacy notice. None is automated by a website email link.
+6. Update the status banner and repeated not-open notices and remove noindex/nofollow when the call is actually open. If adding a submission mailto button, explain that attachments must be added and the message sent manually.
 
-The existing deployment workflow publishes pushes to `main` automatically. Review this change through its draft pull request. Merging publishes the page and navigation entry, including its current draft status; it does not open the call automatically.
+## Keeping the page current
 
-The separate pull-request workflow builds VuePress without deploying. Its successful build confirms that the site compiles, not that mailbox delivery or automatic acknowledgements work.
+After award decisions, publish the availability of subsequent rounds. When the four places are allocated or the budget is committed, replace the status with Closed, explain that remaining cut-offs will not take place, and notify affected applicants. Do not close rounds automatically based only on receipt counts.
 
-Before publication, check `/open-call/` on desktop and mobile, keyboard navigation, the email recipient and subject, real document downloads and mailbox delivery/receipt handling. At the deadline, update the page to **closed** and retain the public call documents for reference.
+The existing workflow deploys pushes to main. Review on the local feature branch and use `cd docs`, `npm ci`, `npm run dev` for the preview; `npm run build` checks the VuePress build. The preview route is normally http://localhost:8080/open-call/.
+
+This change does not publish the website, send email or change mailbox settings.
