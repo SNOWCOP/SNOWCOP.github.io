@@ -17,6 +17,8 @@ features:
     details: Capitalize on CDSE to foster innovation and excellence in development of solutions.
   - title: Objective 3
     details: Enhance the Capacity building and rise awareness.
+  - title: Objective 4
+    details: Leverage cascade funding to attract investments
 
 footer: This project has received funding from the European Union’s Horizon Research and Innovation Actions programme under Grant Agreement 10180133
 ---
